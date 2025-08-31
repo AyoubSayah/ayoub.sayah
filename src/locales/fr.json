@@ -1,0 +1,164 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Bonjour, je suis",
+    "title": "Ingénieur Logiciel | Développeur Frontend | Développeur Full-Stack",
+    "description": "Plus de 5 ans d'expérience dans la construction d'applications web performantes et centrées sur l'utilisateur pour les plateformes bancaires, de microfinance et eCommerce. Passionné par la création de solutions évolutives avec des technologies modernes.",
+    "viewWork": "Voir Mon Travail",
+    "getInTouch": "Me Contacter",
+    "stats": {
+      "title": "Statistiques Rapides",
+      "subtitle": "Les chiffres qui racontent mon histoire",
+      "experience": "Années d'Expérience",
+      "projects": "Projets Réalisés",
+      "frameworks": "Frameworks Maîtrisés",
+      "performance": "Amélioration Performance"
+    },
+    "coreTechnologies": "Technologies Principales",
+    "coreTechnologiesDesc": "Technologies que j'utilise pour donner vie aux idées",
+    "articles": {
+      "title": "Derniers Articles",
+      "subtitle": "Partage de connaissances et d'idées de mon parcours de développement",
+      "performance": "Performance",
+      "development": "Développement",
+      "readMore": "Lire Plus",
+      "article1": {
+        "title": "Réduire le Bundle d'Entrée de votre SPA : La Clé de Chargements Plus Rapides",
+        "description": "Apprenez à optimiser la taille du bundle de votre Application à Page Unique pour obtenir des temps de chargement plus rapides et une meilleure expérience utilisateur grâce aux techniques de code splitting et lazy loading.",
+        "readTime": "5 min de lecture"
+      },
+      "article2": {
+        "title": "Construire un Catalogue de Fonctionnalités avec Storybook et MSW",
+        "description": "Découvrez comment créer un catalogue de fonctionnalités complet en utilisant Storybook et Mock Service Worker (MSW) pour un meilleur workflow de développement et une collaboration d'équipe optimisée.",
+        "readTime": "6 min de lecture"
+      }
+    },
+    "latestProject": "Dernier Projet",
+    "latestProjectDesc": "Banque Centrale de la République de Guinée",
+    "viewAllProjects": "Voir Tous les Projets",
+    "current": "Actuel",
+    "present": "Présent",
+    "projectCompany": "Proxym-IT",
+    "projectDescription": "Développement d'une plateforme bancaire d'entreprise complète pour la Banque Centrale de Guinée. Implémentation d'une intégration avancée React Query avec Formio.js, incluant des remplacements de fonction fetch personnalisés et des capacités de génération de formulaires alimentées par l'IA.",
+    "projectFeature1": "Construction d'interfaces bancaires d'entreprise avec React et React Query",
+    "projectFeature2": "Remplacement de la fonction fetch de Formio.js pour intégrer React Query",
+    "projectFeature3": "Implémentation de la génération de formulaires alimentée par l'IA avec Formio.js",
+    "centralBank": "Banque Centrale",
+    "guineaRepublic": "République de Guinée",
+    "corporateBanking": "Plateforme Bancaire d'Entreprise",
+    "services": {
+      "title": "Services que j'offre",
+      "subtitle": "Solutions complètes pour vos besoins numériques",
+      "frontend": {
+        "title": "Développement Frontend",
+        "description": "Création d'interfaces utilisateur belles et réactives avec des frameworks modernes",
+        "feature1": "Applications React, Vue.js, Angular",
+        "feature2": "Design réactif et mobile-first",
+        "feature3": "Optimisation des performances et SEO"
+      },
+      "backend": {
+        "title": "Développement Backend",
+        "description": "Construction de solutions côté serveur robustes et APIs",
+        "feature1": "Node.js, NestJS, Express.js",
+        "feature2": "Conception et optimisation de bases de données",
+        "feature3": "Développement et intégration d'APIs"
+      },
+      "consulting": {
+        "title": "Conseil Technique",
+        "description": "Guidance experte pour vos décisions techniques",
+        "feature1": "Planification et conception d'architecture",
+        "feature2": "Recommandations de stack technologique",
+        "feature3": "Audits de performance et de sécurité"
+      }
+    },
+    "cta": {
+      "title": "Prêt à Démarrer Votre Projet ?",
+      "description": "Travaillons ensemble pour donner vie à vos idées avec une technologie de pointe et des expériences utilisateur exceptionnelles.",
+      "primaryButton": "Démarrer un Projet",
+      "secondaryButton": "Voir Mon Travail"
+    }
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "subtitle": "Un développeur Frontend passionné avec plus de 5 ans d'expérience dans la création d'expériences numériques exceptionnelles",
+    "whoIAm": "Qui Je Suis",
+    "description1": "Je suis Ayoub Sayah, un développeur Frontend polyvalent basé à Sousse, Tunisie. Avec plus de 5 ans d'expérience, je me spécialise dans la construction d'applications web performantes et centrées sur l'utilisateur pour les plateformes bancaires, de microfinance et eCommerce.",
+    "description2": "Je maîtrise parfaitement React, Vue, Angular et les outils de gestion d'état comme Redux et React Query. Ma passion réside dans la résolution de défis complexes et la conduite du succès des projets grâce à des solutions innovantes.",
+    "description3": "J'aime collaborer avec des équipes internationales pour livrer des applications web réactives, accessibles et évolutives qui ont un réel impact sur la vie des utilisateurs.",
+    "personalInfo": "Informations Personnelles",
+    "education": "Formation",
+    "educationDesc": "Mon parcours académique en informatique",
+    "languages": "Langues",
+    "languagesDesc": "Compétences de communication dans plusieurs langues",
+    "certifications": "Certifications",
+    "certificationsDesc": "Certifications professionnelles et réalisations"
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "subtitle": "Mon parcours professionnel en développement logiciel",
+    "currentRole": "Poste Actuel",
+    "previousExperience": "Expérience Précédente",
+    "keyAchievements": "Réalisations Clés",
+    "keyAchievementsDesc": "Accomplissements notables tout au long de ma carrière"
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "subtitle": "Une collection de projets qui mettent en valeur mes compétences et mon expérience",
+    "featuredProjects": "Projets Vedettes",
+    "featuredProjectsDesc": "Travaux récents qui démontrent mon expertise",
+    "otherProjects": "Autres Projets",
+    "otherProjectsDesc": "Projets supplémentaires et travail freelance"
+  },
+  "skills": {
+    "title": "Compétences Techniques",
+    "subtitle": "Technologies et outils que j'utilise pour construire des expériences numériques exceptionnelles",
+    "frontend": "Développement Frontend",
+    "frontendDesc": "Frameworks et bibliothèques modernes pour construire des interfaces utilisateur réactives",
+    "stateManagement": "Gestion d'État",
+    "stateManagementDesc": "Outils et patterns pour gérer efficacement l'état de l'application",
+    "backend": "Backend & Outils de Développement",
+    "backendDesc": "Technologies côté serveur et utilitaires de développement",
+    "testing": "Tests & Assurance Qualité",
+    "testingDesc": "Outils et méthodologies pour assurer la qualité et la fiabilité du code",
+    "additionalSkills": "Compétences Supplémentaires",
+    "additionalSkillsDesc": "Autres technologies et méthodologies avec lesquelles je travaille",
+    "skillsSummary": "Résumé des Compétences",
+    "skillsSummaryDesc": "Domaines clés d'expertise et d'expérience"
+  },
+  "contact": {
+    "title": "Me Contacter",
+    "subtitle": "Discutons de votre prochain projet ou opportunité",
+    "letsConnect": "Connectons-nous",
+    "description": "Je suis toujours intéressé par de nouvelles opportunités et des projets passionnants. Que vous ayez une question, que vous souhaitiez discuter d'une collaboration potentielle ou simplement dire bonjour, n'hésitez pas à me contacter !",
+    "phone": "Téléphone",
+    "email": "Email",
+    "location": "Localisation",
+    "followMe": "Suivez-moi",
+    "sendMessage": "Envoyer un Message",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "subject": "Sujet",
+    "message": "Message",
+    "sending": "Envoi...",
+    "send": "Envoyer le Message",
+    "currentAvailability": "Disponibilité Actuelle",
+    "availabilityDesc": "Je suis actuellement disponible pour de nouvelles opportunités",
+    "availableForProjects": "Disponible pour Nouveaux Projets",
+    "fullTime": "Temps plein",
+    "employment": "Emploi",
+    "contract": "Contrat",
+    "projects": "Projets",
+    "freelance": "Freelance",
+    "opportunities": "Opportunités"
+  },
+  "footer": {
+    "copyright": "© 2025 Ayoub Sayah. Construit avec Vue.js & Tailwind CSS"
+  }
+}

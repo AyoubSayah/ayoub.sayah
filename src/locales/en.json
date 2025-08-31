@@ -1,0 +1,164 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hello, I'm",
+    "title": "Software Engineer {'|'} Frontend Developer {'|'} Full-Stack Developer",
+    "description": "Over 5 years of experience building high-performance, user-focused web applications for banking, microfinance, and eCommerce platforms. Passionate about creating scalable solutions with modern technologies.",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch",
+    "stats": {
+      "title": "Quick Stats",
+      "subtitle": "Numbers that tell my story",
+      "experience": "Years Experience",
+      "projects": "Projects Completed",
+      "frameworks": "Frameworks Mastered",
+      "performance": "Performance Boost"
+    },
+    "coreTechnologies": "Core Technologies",
+    "coreTechnologiesDesc": "Technologies I use to bring ideas to life",
+    "articles": {
+      "title": "Latest Articles",
+      "subtitle": "Sharing knowledge and insights from my development journey",
+      "performance": "Performance",
+      "development": "Development",
+      "readMore": "Read More",
+      "article1": {
+        "title": "Shrinking Your SPA's Entry Bundle: The Key to Faster Loads",
+        "description": "Learn how to optimize your Single Page Application's bundle size to achieve faster load times and better user experience through code splitting and lazy loading techniques.",
+        "readTime": "5 min read"
+      },
+      "article2": {
+        "title": "Building a Feature Catalog with Storybook and MSW",
+        "description": "Discover how to create a comprehensive feature catalog using Storybook and Mock Service Worker (MSW) for better development workflow and team collaboration.",
+        "readTime": "6 min read"
+      }
+    },
+    "latestProject": "Latest Project",
+    "latestProjectDesc": "Banque Centrale de la République de Guinée",
+    "viewAllProjects": "View All Projects",
+    "current": "Current",
+    "present": "Present",
+    "projectCompany": "Proxym-IT",
+    "projectDescription": "Developed a comprehensive corporate banking platform for the Central Bank of Guinea. Implemented advanced React Query integration with Formio.js, including custom fetch function overrides and AI-powered form generation capabilities.",
+    "projectFeature1": "Built corporate banking interfaces using React and React Query",
+    "projectFeature2": "Overrode Formio.js fetch function to integrate with React Query",
+    "projectFeature3": "Implemented AI-powered form generation using Formio.js",
+    "centralBank": "Central Bank",
+    "guineaRepublic": "Guinea Republic",
+    "corporateBanking": "Corporate Banking Platform",
+    "services": {
+      "title": "Services I Offer",
+      "subtitle": "Comprehensive solutions for your digital needs",
+      "frontend": {
+        "title": "Frontend Development",
+        "description": "Creating beautiful, responsive user interfaces with modern frameworks",
+        "feature1": "React, Vue.js, Angular applications",
+        "feature2": "Responsive and mobile-first design",
+        "feature3": "Performance optimization and SEO"
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Building robust server-side solutions and APIs",
+        "feature1": "Node.js, NestJS, Express.js",
+        "feature2": "Database design and optimization",
+        "feature3": "API development and integration"
+      },
+      "consulting": {
+        "title": "Technical Consulting",
+        "description": "Expert guidance for your technical decisions",
+        "feature1": "Architecture planning and design",
+        "feature2": "Technology stack recommendations",
+        "feature3": "Performance and security audits"
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "description": "Let's work together to bring your ideas to life with cutting-edge technology and exceptional user experiences.",
+      "primaryButton": "Start a Project",
+      "secondaryButton": "View My Work"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "A passionate Frontend Developer with over 5 years of experience creating exceptional digital experiences",
+    "whoIAm": "Who I Am",
+    "description1": "I'm Ayoub Sayah, a versatile Frontend Developer based in Sousse, Tunisia. With over 5 years of experience, I specialize in building high-performance, user-focused web applications for banking, microfinance, and eCommerce platforms.",
+    "description2": "I'm highly proficient in React, Vue, Angular, and state management tools like Redux and React Query. My passion lies in solving complex challenges and driving project success through innovative solutions.",
+    "description3": "I love collaborating with global teams to deliver responsive, accessible, and scalable web applications that make a real impact on users' lives.",
+    "personalInfo": "Personal Information",
+    "education": "Education",
+    "educationDesc": "My academic journey in computer science",
+    "languages": "Languages",
+    "languagesDesc": "Communication skills across multiple languages",
+    "certifications": "Certifications",
+    "certificationsDesc": "Professional certifications and achievements"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "My professional journey in software development",
+    "currentRole": "Current Role",
+    "previousExperience": "Previous Experience",
+    "keyAchievements": "Key Achievements",
+    "keyAchievementsDesc": "Notable accomplishments throughout my career"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "A collection of projects that showcase my skills and experience",
+    "featuredProjects": "Featured Projects",
+    "featuredProjectsDesc": "Recent work that demonstrates my expertise",
+    "otherProjects": "Other Projects",
+    "otherProjectsDesc": "Additional projects and freelance work"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Technologies and tools I use to build exceptional digital experiences",
+    "frontend": "Frontend Development",
+    "frontendDesc": "Modern frameworks and libraries for building responsive user interfaces",
+    "stateManagement": "State Management",
+    "stateManagementDesc": "Tools and patterns for managing application state effectively",
+    "backend": "Backend & Development Tools",
+    "backendDesc": "Server-side technologies and development utilities",
+    "testing": "Testing & Quality Assurance",
+    "testingDesc": "Tools and methodologies for ensuring code quality and reliability",
+    "additionalSkills": "Additional Skills",
+    "additionalSkillsDesc": "Other technologies and methodologies I work with",
+    "skillsSummary": "Skills Summary",
+    "skillsSummaryDesc": "Key areas of expertise and experience"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's discuss your next project or opportunity",
+    "letsConnect": "Let's Connect",
+    "description": "I'm always interested in new opportunities and exciting projects. Whether you have a question, want to discuss a potential collaboration, or just want to say hello, feel free to reach out!",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "followMe": "Follow Me",
+    "sendMessage": "Send Message",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "subject": "Subject",
+    "message": "Message",
+    "sending": "Sending...",
+    "send": "Send Message",
+    "currentAvailability": "Current Availability",
+    "availabilityDesc": "I'm currently available for new opportunities",
+    "availableForProjects": "Available for New Projects",
+    "fullTime": "Full-time",
+    "employment": "Employment",
+    "contract": "Contract",
+    "projects": "Projects",
+    "freelance": "Freelance",
+    "opportunities": "Opportunities"
+  },
+  "footer": {
+    "copyright": "© 2025 Ayoub Sayah. Built with Vue.js & Tailwind CSS"
+  }
+}
