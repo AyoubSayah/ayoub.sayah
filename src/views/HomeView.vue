@@ -7,19 +7,22 @@
 
       <!-- Floating JS Ecosystem Logos -->
       <div class="absolute inset-0 overflow-hidden z-[20]">
-        <img src="../assets/angular.png" class="absolute rounded-full top-10 left-16 w-16 opacity-80 animate-float-slow"
+        <img src="../assets/angular.png"
+          class="absolute md:block hidden rounded-full top-10 left-16 w-12 opacity-80 animate-float-slow"
           alt="JavaScript" />
         <img src="../assets/vue.png"
-          class="absolute rounded-full top-1/2 left-10 w-16 h-16 object-cover opacity-80 animate-float" alt="React" />
-        <img src="../assets/typescript.png" class="absolute rounded-full top-1/3 right-20 w-14 opacity-80 animate-float"
-          alt="Vue" />
+          class="absolute md:block hidden rounded-full top-1/2 left-10 w-12 h-12 object-cover opacity-80 animate-float"
+          alt="React" />
+        <img src="../assets/typescript.png"
+          class="absolute md:block hidden rounded-full top-1/3 right-20 w-12 opacity-80 animate-float" alt="Vue" />
         <img src="../assets/logo-small.svg"
-          class="absolute rounded-full bottom-20 left-1/4 w-14 opacity-80 animate-float" alt="Angular" />
+          class="absolute md:block hidden rounded-full bottom-20 left-1/4 w-12 opacity-80 animate-float"
+          alt="Angular" />
         <img src="../assets/react.jpg"
-          class="absolute rounded-full bottom-10  object-cover w-14 h-14 right-16 opacity-80 animate-float-slow"
+          class="absolute md:block hidden rounded-full bottom-10  object-cover w-12 h-12 right-16 opacity-80 animate-float-slow"
           alt="Node.js" />
       </div>
-      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div class="absolute md:block hidden bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
         <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 16l-6-6h12z" />
         </svg>
@@ -548,7 +551,7 @@ const initThreeJS = () => {
   ];
 
   const spheres = logos.map((src, i) => {
-    const geometry = new THREE.CylinderGeometry(0.5, 0.5, 0.05, 64); // radiusTop, radiusBottom, height, segments
+    const geometry = new THREE.CylinderGeometry(0.4, 0.4, 0.04, 64); // radiusTop, radiusBottom, height, segments
     const material = new THREE.MeshStandardMaterial({
       map: loader.load(src),
       metalness: 0.4,
@@ -562,7 +565,7 @@ const initThreeJS = () => {
     directional.position.set(5, 5, 5);
     scene.add(directional);
     const sphere = new THREE.Mesh(geometry, material);
-    sphere.position.set(Math.cos(i * Math.PI) * 2, Math.sin(i * Math.PI) * 1.5, 0);
+    sphere.position.set(Math.cos(i * Math.PI) * 6, Math.sin(i * Math.PI) * 5, 0);
 
     scene.add(sphere);
 
