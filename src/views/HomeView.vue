@@ -489,7 +489,7 @@ import {
   CogIcon
 } from '@heroicons/vue/24/outline'
 import Certification from '../components/Certfication.vue'
-import { useTemplateRef, watch, watchEffect } from 'vue';
+import { useTemplateRef, watchEffect } from 'vue';
 import { onMounted } from 'vue';
 import Typed from 'typed.js';
 import { useI18n } from 'vue-i18n';
@@ -498,7 +498,7 @@ const { t, } = useI18n();
 const description = useTemplateRef("description")
 const threeCanvas = useTemplateRef("threeCanvas");
 
-let descriptionTypedInstance = null;
+let descriptionTypedInstance: Typed | null = null;
 
 watchEffect(async () => {
   const text = t("home.description");
@@ -519,6 +519,7 @@ onMounted(() => {
   initThreeJS();
 });
 const initThreeJS = () => {
+  if (!threeCanvas?.value) return;
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
   camera.position.z = 5;
