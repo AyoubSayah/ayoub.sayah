@@ -1,31 +1,44 @@
-<script setup lang="ts">
-import {
-  CodeBracketIcon,
-  GlobeAltIcon,
-  CommandLineIcon,
-  ServerIcon,
-  CogIcon
-} from '@heroicons/vue/24/outline'
-</script>
-
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
     <section
       class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-50 via-white to-purple-50 dark:from-dark-900 dark:via-dark-800 dark:to-dark-900">
-      <!-- Animated Background Elements -->
-      <div class="absolute inset-0 overflow-hidden">
+      <canvas ref="threeCanvas" class="absolute inset-0 z-0"></canvas>
+
+      <!-- Floating JS Ecosystem Logos -->
+      <div class="absolute inset-0 overflow-hidden z-[20]">
+        <img src="../assets/angular.png" class="absolute rounded-full top-10 left-16 w-16 opacity-80 animate-float-slow"
+          alt="JavaScript" />
+        <img src="../assets/vue.png"
+          class="absolute rounded-full top-1/2 left-10 w-16 h-16 object-cover opacity-80 animate-float" alt="React" />
+        <img src="../assets/typescript.png" class="absolute rounded-full top-1/3 right-20 w-14 opacity-80 animate-float"
+          alt="Vue" />
+        <img src="../assets/logo-small.svg"
+          class="absolute rounded-full bottom-20 left-1/4 w-14 opacity-80 animate-float" alt="Angular" />
+        <img src="../assets/react.jpg"
+          class="absolute rounded-full bottom-10  object-cover w-14 h-14 right-16 opacity-80 animate-float-slow"
+          alt="Node.js" />
+      </div>
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 16l-6-6h12z" />
+        </svg>
+      </div>
+
+      <!-- Animated Background Blobs -->
+      <div class="absolute inset-0 overflow-hidden z-10">
         <div
-          class="absolute top-20 left-20 w-72 h-72 bg-primary-300 dark:bg-primary-700 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float">
+          class="absolute top-20 z-10 left-20 w-72 h-72 bg-primary-300 dark:bg-primary-700 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float">
         </div>
         <div
-          class="absolute top-40 right-20 w-96 h-96 bg-purple-300 dark:bg-purple-700 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"
+          class="absolute top-40 z-10 right-20 w-96 h-96 bg-purple-300 dark:bg-purple-700 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"
           style="animation-delay: 2s;"></div>
         <div
-          class="absolute bottom-20 left-1/2 w-80 h-80 bg-pink-300 dark:bg-pink-700 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"
+          class="absolute bottom-20 z-10 left-1/2 w-80 h-80 bg-pink-300 dark:bg-pink-700 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"
           style="animation-delay: 4s;"></div>
       </div>
 
+      <!-- Content -->
       <div class="container-custom relative z-10">
         <div class="max-w-4xl mx-auto text-center">
           <div class="animate-bounce-in">
@@ -38,13 +51,15 @@ import {
             <h2
               class="text-2xl md:text-3xl lg:text-2xl font-semibold mb-8 text-gray-700 dark:text-gray-300 animate-slide-up"
               style="animation-delay: 0.2s;">
-              <span class="">{{ $t('home.title') }}</span>
+              <span>{{ $t('home.title') }}</span>
             </h2>
-            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-12 leading-relaxed max-w-3xl mx-auto animate-slide-up"
-              style="animation-delay: 0.4s;">
-              {{ $t('home.description') }}
-            </p>
-
+            <div class="min-h-[10rem] ">
+              <p ref="description"
+                class="text-lg min-h-[8rem] inline-block md:text-xl text-gray-600 dark:text-gray-400 mb-12 leading-relaxed max-w-3xl mx-auto animate-slide-up"
+                style="animation-delay: 0.4s;">
+                <!-- {{ $t('home.description') }} -->
+              </p>
+            </div>
             <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slide-up"
               style="animation-delay: 0.6s;">
               <router-link to="/projects" class="btn-primary text-lg px-8 py-4 animate-pulse-slow">
@@ -55,11 +70,10 @@ import {
               </router-link>
             </div>
           </div>
-
-
         </div>
       </div>
     </section>
+
 
     <!-- Quick Stats Section -->
     <section class="section-padding bg-white dark:bg-dark-800 relative overflow-hidden">
@@ -76,7 +90,7 @@ import {
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div
             class="card  dark:bg-dark-900 p-6 text-center animate-slide-up hover:scale-105 transition-transform duration-300">
-            <div class="text-4xl md:text-5xl font-bold gradient-text mb-2 animate-count">4+</div>
+            <div class="text-4xl md:text-5xl font-bold gradient-text mb-2 animate-count">5+</div>
             <p class="text-gray-600 dark:text-gray-400">{{ $t('home.stats.experience') }}</p>
           </div>
 
@@ -103,7 +117,6 @@ import {
         </div>
       </div>
     </section>
-
     <!-- Featured Skills Section -->
     <section class="section-padding bg-gray-50 dark:bg-dark-900 relative overflow-hidden">
       <div class="container-custom">
@@ -173,6 +186,7 @@ import {
         </div>
       </div>
     </section>
+    <Certification />
 
     <!-- Articles Section -->
     <section class="section-padding bg-white dark:bg-dark-800 relative overflow-hidden">
@@ -188,7 +202,7 @@ import {
 
         <div class="grid md:grid-cols-2 gap-8">
           <!-- Article 1 -->
-          <div class="card p-8 animate-slide-up group hover:scale-105 transition-all duration-300">
+          <div class="card  dark:bg-dark-900  p-8 animate-slide-up group hover:scale-105 transition-all duration-300">
             <div class="flex items-center justify-between mb-4">
               <span
                 class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 rounded-full text-sm font-medium">
@@ -221,7 +235,7 @@ import {
           </div>
 
           <!-- Article 2 -->
-          <div class="card p-8 animate-slide-up group hover:scale-105 transition-all duration-300"
+          <div class="card  dark:bg-dark-900  p-8 animate-slide-up group hover:scale-105 transition-all duration-300"
             style="animation-delay: 0.1s;">
             <div class="flex items-center justify-between mb-4">
               <span
@@ -443,7 +457,8 @@ import {
           <p class="text-xl mb-8 opacity-90 animate-slide-up" style="animation-delay: 0.2s;">
             {{ $t('home.cta.description') }}
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 0.4s;">
+          <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up mt-4"
+            style="animation-delay: 0.4s;">
             <router-link to="/contact"
               class="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 text-lg">
               {{ $t('home.cta.primaryButton') }}
@@ -467,23 +482,139 @@ import {
     </section>
   </div>
 </template>
+<script lang="ts" setup>
+import {
+  CodeBracketIcon,
+  ServerIcon,
+  CogIcon
+} from '@heroicons/vue/24/outline'
+import Certification from '../components/Certfication.vue'
+import { useTemplateRef, watch, watchEffect } from 'vue';
+import { onMounted } from 'vue';
+import Typed from 'typed.js';
+import { useI18n } from 'vue-i18n';
+import * as THREE from 'three';
+const { t, } = useI18n();
+const description = useTemplateRef("description")
+const threeCanvas = useTemplateRef("threeCanvas");
 
-<style scoped>
+let descriptionTypedInstance = null;
+
+watchEffect(async () => {
+  const text = t("home.description");
+  descriptionTypedInstance?.destroy();
+
+  if (description?.value) {
+    descriptionTypedInstance = new Typed(description.value, {
+      strings: [text],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true,
+      smartBackspace: true,
+      backDelay: 1500,
+    });// Adjust typing speed here
+  }
+});
+onMounted(() => {
+  initThreeJS();
+});
+const initThreeJS = () => {
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+  camera.position.z = 5;
+
+  const renderer = new THREE.WebGLRenderer({ canvas: threeCanvas.value, alpha: true });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+  // Light
+  const light = new THREE.AmbientLight(0xffffff, 1);
+  scene.add(light);
+
+  // Orbiting JS logos (as spheres with textures)
+  const loader = new THREE.TextureLoader();
+  const logos = [
+    "src/assets/typescript.png",
+    "src/assets/logo-small.svg",
+    "src/assets/vue.png",
+    "src/assets/react.svg",
+    "src/assets/angular.png",
+    "src/assets/storybook.webp",
+
+
+  ];
+
+
+  const spheres = logos.map((src, i) => {
+    const geometry = new THREE.CylinderGeometry(0.5, 0.5, 0.05, 64); // radiusTop, radiusBottom, height, segments
+    const material = new THREE.MeshStandardMaterial({
+      map: loader.load(src),
+      metalness: 0.4,
+      roughness: 0.7,
+
+    });
+    const ambient = new THREE.AmbientLight(0xffffff, 0.6); // soft fill
+    scene.add(ambient);
+
+    const directional = new THREE.DirectionalLight(0xffffff, 0.6);
+    directional.position.set(5, 5, 5);
+    scene.add(directional);
+    const sphere = new THREE.Mesh(geometry, material);
+    sphere.position.set(Math.cos(i * Math.PI) * 2, Math.sin(i * Math.PI) * 1.5, 0);
+
+    scene.add(sphere);
+
+    return sphere;
+  });
+
+  // Animation
+  const animate = () => {
+    requestAnimationFrame(animate);
+    spheres.forEach((s, i) => {
+      s.rotation.x += 0.005;
+      s.rotation.y += 0.01;
+      s.position.x = Math.cos(Date.now() * 0.001 + i) * 2;
+      s.position.y = Math.sin(Date.now() * 0.001 + i) * 1.5;
+      s.position.z = Math.sin(Date.now() * 0.001 + i) * 0.5; // gives depth
+    });
+    renderer.render(scene, camera);
+  };
+
+  animate();
+
+  window.addEventListener("resize", () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+};
+</script>
+<style>
 .typing-text {
   position: relative;
   display: inline-block;
 }
 
-.typing-text::after {
-  content: '';
-  position: absolute;
-  right: -4px;
-  top: 0;
-  height: 100%;
-  width: 3px;
-  background: #3b82f6;
-  animation: blink-caret 0.75s step-end infinite;
+.typed-cursor {
+  display: inline-block;
+  vertical-align: middle;
+  /* Keep cursor aligned with text */
+  font-weight: bold;
+  color: #6b46c1;
+  /* or your theme color */
 }
+
+p {
+  display: inline;
+  /* Matches text */
+  vertical-align: middle;
+}
+
+img:hover {
+  transform: scale(1.1) rotate(5deg);
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 10px #6b46c1);
+}
+
 
 @keyframes blink-caret {
 

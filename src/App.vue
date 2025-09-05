@@ -41,7 +41,30 @@ const toggleLanguage = () => {
 const toggleMobileMenu = () => {
   mobileMenuOpen.value = !mobileMenuOpen.value
 }
+// function handleKey(e) {
+//   switch (e.key) {
+//     case "ArrowLeft":
+//       alert("left");
+//       break;
+//     case "ArrowRight":
+//       alert("right");
+//       break;
+//     case "+":
+//       alert("plus");
+//       break;
+//     case "-":
+//     case "Delete":
 
+//       break;
+//   }
+// }
+
+// onMounted(() => {
+//   window.addEventListener("keyup", handleKey);
+// });
+// onBeforeUnmount(() => {
+//   window.removeEventListener("keyup", handleKey);
+// });
 onMounted(() => {
   const savedTheme = localStorage.getItem('theme')
   if (savedTheme) {

@@ -270,12 +270,72 @@
                 </div>
               </div>
               <div class="bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg p-8 text-white text-center">
-                <div class="text-6xl font-bold mb-2">50+</div>
+                <div class="text-6xl font-bold mb-2">5+</div>
                 <div class="text-lg mb-4">Corporate Clients</div>
                 <div class="text-sm opacity-90">Enterprise Banking</div>
               </div>
             </div>
           </div>
+          <div class="card dark:bg-dark-900 p-8 animate-slide-up" style="animation-delay: 0.3s;">
+            <div class="grid lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <h3 class="text-3xl font-bold">E-Commerce Web App</h3>
+                  <span
+                    class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">
+                    Portfolio
+                  </span>
+                </div>
+                <p class="text-primary-600 dark:text-primary-400 font-medium mb-4">Personal Project • 2025</p>
+                <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                  Developed a fully responsive e-commerce application showcasing <strong>multi-theming</strong> and
+                  <strong>smooth animations</strong> to highlight UI/UX skills. Integrated Firebase for authentication,
+                  Firestore for product storage, and optimized performance with lazy loading and image compression.
+                </p>
+                <div class="space-y-3 mb-6">
+                  <div class="flex items-start">
+                    <div class="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                    <p class="text-gray-600 dark:text-gray-400">Implemented light, dark, and custom themes with instant
+                      switching</p>
+                  </div>
+                  <div class="flex items-start">
+                    <div class="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                    <p class="text-gray-600 dark:text-gray-400">Designed smooth page transitions and interactive cart
+                      animations</p>
+                  </div>
+                  <div class="flex items-start">
+                    <div class="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                    <p class="text-gray-600 dark:text-gray-400">Built shopping cart and checkout flow with Firebase Auth
+                      & Firestore</p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span
+                    class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">Vue</span>
+                  <span
+                    class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">TailwindCSS</span>
+                  <span
+                    class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">Pinia</span>
+                  <span
+                    class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">Firebase</span>
+                  <span
+                    class="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">Animations</span>
+                </div>
+                <div class="text-sm text-gray-500 dark:text-gray-400">
+                  <strong>Links:</strong>
+                  <a href="https://ecommerce-261605.web.app" target="_blank" class="underline">Live Demo</a> •
+                  <a href="https://github.com/AyoubSayah/templateEcommerceVue" target="_blank"
+                    class="underline">GitHub</a>
+                </div>
+              </div>
+              <div class="bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg p-8 text-white text-center">
+                <div class="text-6xl font-bold mb-2">✨</div>
+                <div class="text-lg mb-4">Multi-Theming</div>
+                <div class="text-sm opacity-90">Animations & UI Craftsmanship</div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
