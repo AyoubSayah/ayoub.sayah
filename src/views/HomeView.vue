@@ -42,10 +42,10 @@
       <div class="container-custom relative z-10">
         <div class="max-w-4xl mx-auto text-center">
           <div class="animate-bounce-in">
-            <p class="text-xl md:text-2xl text-primary-600 dark:text-primary-400 mb-4 animate-slide-down">
+            <p class="text-xl md:text-3xl text-primary-600 dark:text-primary-400 mb-4 animate-slide-down">
               {{ $t('home.greeting') }}
             </p>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-slide-up">
+            <h1 class="text-5xl md:text-5xl lg:text-7xl font-bold mb-6 animate-slide-up">
               <span class="gradient-text">Ayoub Sayah</span>
             </h1>
             <h2
@@ -497,7 +497,12 @@ import * as THREE from 'three';
 const { t, } = useI18n();
 const description = useTemplateRef("description")
 const threeCanvas = useTemplateRef("threeCanvas");
-
+import tsLogo from '@/assets/typescript.png';
+import jsLogo from '@/assets/logo-small.svg';
+import vueLogo from '@/assets/vue.png';
+import reactLogo from '@/assets/react.svg';
+import angularLogo from '@/assets/angular.png';
+import storybookLogo from '@/assets/storybook.webp';
 let descriptionTypedInstance: Typed | null = null;
 
 watchEffect(async () => {
@@ -534,16 +539,13 @@ const initThreeJS = () => {
   // Orbiting JS logos (as spheres with textures)
   const loader = new THREE.TextureLoader();
   const logos = [
-    "src/assets/typescript.png",
-    "src/assets/logo-small.svg",
-    "src/assets/vue.png",
-    "src/assets/react.svg",
-    "src/assets/angular.png",
-    "src/assets/storybook.webp",
-
-
+    tsLogo,
+    jsLogo,
+    vueLogo,
+    reactLogo,
+    angularLogo,
+    storybookLogo
   ];
-
 
   const spheres = logos.map((src, i) => {
     const geometry = new THREE.CylinderGeometry(0.5, 0.5, 0.05, 64); // radiusTop, radiusBottom, height, segments
