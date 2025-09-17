@@ -6,23 +6,20 @@
       <canvas ref="threeCanvas" class="absolute inset-0 z-0"></canvas>
 
       <!-- Floating JS Ecosystem Logos -->
-      <div class="absolute inset-0 overflow-hidden z-[20]">
-        <img src="../assets/angular.png"
-          class="absolute md:block hidden rounded-full top-10 left-16 w-12 opacity-80 animate-float-slow"
-          alt="JavaScript" />
-        <img src="../assets/vue.png"
-          class="absolute md:block hidden rounded-full top-1/2 left-10 w-12 h-12 object-cover opacity-80 animate-float"
-          alt="React" />
-        <img src="../assets/typescript.png"
-          class="absolute md:block hidden rounded-full top-1/3 right-20 w-12 opacity-80 animate-float" alt="Vue" />
-        <img src="../assets/logo-small.svg"
-          class="absolute md:block hidden rounded-full bottom-20 left-1/4 w-12 opacity-80 animate-float"
-          alt="Angular" />
-        <img src="../assets/react.jpg"
-          class="absolute md:block hidden rounded-full bottom-10  object-cover w-12 h-12 right-16 opacity-80 animate-float-slow"
-          alt="Node.js" />
+      <div class="absolute inset-0 overflow-hidden z-[1]">
+        <img src="../assets/angular.png" class="absolute md:block hidden0
+           rounded-full top-10 left-16 w-12 opacity-80 animate-float-slow" alt="JavaScript" />
+        <img src="../assets/vue.png" class="absolute md:block hidden0
+           rounded-full top-1/2 left-10 w-12 h-12 object-cover opacity-80 animate-float" alt="React" />
+        <img src="../assets/typescript.png" class="absolute md:block hidden0
+           rounded-full top-1/3 right-20 w-12 opacity-80 animate-float" alt="Vue" />
+        <img src="../assets/logo-small.svg" class="absolute md:block hidden0
+           rounded-full bottom-20 left-1/4 w-12 opacity-80 animate-float" alt="Angular" />
+        <img src="../assets/react.jpg" class="absolute md:block hidden0
+           rounded-full bottom-10  object-cover w-12 h-12 right-16 opacity-80 animate-float-slow" alt="Node.js" />
       </div>
-      <div class="absolute md:block hidden bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div class="absolute md:block hidden0
+       bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
         <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 16l-6-6h12z" />
         </svg>
